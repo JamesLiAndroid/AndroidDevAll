@@ -200,7 +200,7 @@ android开发内容，分为下边5个方面，分别为：
 ## 代码规范
 主要考虑当前使用java编写项目，参考java代码规范即可，后续使用kotlin等新语言进行开发，需要重新考虑。
 
-这里的Java代码规范，主要参考google的，不是一成不变，作为参考，根据这个灵活约定。
+这里的Java代码规范，主要参考google的，不是一成不变，作为参考，根据这个灵活约定，尽量做到每次提交之前能够及时检查代码风格和规范！
 
 * 参考文章：
 	* https://jervyshi.gitbooks.io/google-java-styleguide-zh/content/ google的Java代码规范
@@ -228,5 +228,12 @@ android开发内容，分为下边5个方面，分别为：
 番外：动态添加View，LuaViewSDK，聚划算团队出品，用lua语言编写，实现动态化加载原生组件！
 
 ## 持续集成
-这里主要使用jenkins框架来实现
+这里主要使用jenkins框架来实现，通过持续构建并打包，将繁重的打包任务放到服务端，方便测试和发版！
+
+参考文章：
+
+* http://debugtalk.com/post/iOS-Android-Packing-with-Jenkins/ jenkins持续集成的介绍和操作
+* http://valuesfeng.github.io/2016/06/30/Android-jenkins/  jenkins持续集成的配置
+* http://www.ronnywu.com/development_tool/21.html
+* http://blog.csdn.net/walid1992/article/details/51493271
 
