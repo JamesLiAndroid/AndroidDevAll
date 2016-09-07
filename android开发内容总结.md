@@ -4,7 +4,7 @@
 android开发内容，分为下边5个方面，分别为：
 
 * 开发框架
-* 代码组织模式
+* 代码组织架构
 * 代码规范
 * 热修复/插件化
 * 持续集成 
@@ -170,19 +170,30 @@ android开发内容，分为下边5个方面，分别为：
 
 * 支付：支付宝，微信，银联，京东
 * 地图：百度、高德、搜狗
-* 推送：小米、jpush（极光）、云巴、个推、友盟、腾讯信鸽
+* 推送：小米、jpush（极光）、云巴、个推、腾讯信鸽、DDPush（需要自己搭建服务端）
 * 统计：百度统计、友盟
-* 分享/登陆：ShareSDK
+* 分享/登陆：ShareSDK，友盟
 * 替代WebView的浏览技术： 腾讯X5浏览、mui浏览功能
 
 	
-## 代码组织模式
+## 代码组织架构
 代码组织模式分为四类，分别为：
 
-* MVC
-* MVP
-* MVVM
-* MVPVM
+* MVC：最传统的代码组织模式，C层被融入到Actvity和Fragment中，导致Activity和Fragment过重，耦合程度高
+
+* MVP：C层用Presenter来代替，从Activity和Fragment中分离出来，是Activity/Fragment更加注重于View的更新
+
+* MVVM：View和Model进行数据绑定，形成VM层
+
+* MVPVM：MVP+MVVM
+
+参考文章：
+
+* http://blog.zhaiyifan.cn/2016/03/16/android-new-project-from-0-p3/ 讲解MVPVM的
+* http://blog.csdn.net/ronaldong99/article/details/50058385 MVP架构和MVC架构的对比
+* http://zjutkz.net/2016/04/13/%E9%80%89%E6%8B%A9%E6%81%90%E6%83%A7%E7%97%87%E7%9A%84%E7%A6%8F%E9%9F%B3%EF%BC%81%E6%95%99%E4%BD%A0%E8%AE%A4%E6%B8%85MVC%EF%BC%8CMVP%E5%92%8CMVVM/  MVC,MVP,MVVM比较
+* http://zq210wl.github.io/2015/02/03/javascript-design-pattern/  MVC,MVP,MVVM比较
+* http://www.jianshu.com/p/ffcb84dc4ebc  MVC,MVP,MVVM比较
 
 使用原则，根据项目来组织，没有最好的只有最适合的。
 
