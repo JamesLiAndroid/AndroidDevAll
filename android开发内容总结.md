@@ -202,6 +202,12 @@ android开发内容，分为下边5个方面，分别为：
 
 这里的Java代码规范，主要参考google的，不是一成不变，作为参考，根据这个灵活约定。
 
+* 参考文章：
+	* https://jervyshi.gitbooks.io/google-java-styleguide-zh/content/ google的Java代码规范
+	* http://www.jianshu.com/p/0a984f999592 Android编码规范
+	* http://droidyue.com/blog/2016/05/22/use-checkstyle-for-better-code-style/index.html 代码检查工具
+
+
 ## 热修复/插件化
 考虑线上项目存在bug不能及时解决的问题而提出，选择当前最合适的内容进行。
 
