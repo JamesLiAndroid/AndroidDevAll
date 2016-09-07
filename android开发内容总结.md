@@ -209,7 +209,23 @@ android开发内容，分为下边5个方面，分别为：
 
 
 ## 热修复/插件化
+
+热修复框架列表：
+
+* DroidFix： https://github.com/bunnyblue/DroidFix
+* HotFix：也不再维护了，推荐使用RocooFix
+* Nuwa：比较老了，不再维护，不推荐
+* AndFix： https://github.com/alibaba/AndFix
+* RocooFix：  https://github.com/dodola/RocooFix
+* Small： https://github.com/wequick/Small
+
 考虑线上项目存在bug不能及时解决的问题而提出，选择当前最合适的内容进行。
+
+参考文章：
+
+* http://blog.zhaiyifan.cn/2015/11/20/HotPatchCompare/ 热修复框架对比
+
+番外：动态添加View，LuaViewSDK，聚划算团队出品，用lua语言编写，实现动态化加载原生组件！
 
 ## 持续集成
 这里主要使用jenkins框架来实现
