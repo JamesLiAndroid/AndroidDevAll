@@ -17,6 +17,7 @@ android开发内容，分为下边5个方面，分别为：
 * 网络请求框架
 * 图片加载框架
 * 数据库
+* Json解析
 * View的依赖注入
 * 事件总线
 * 内存泄露监测
@@ -104,7 +105,9 @@ android开发内容，分为下边5个方面，分别为：
 	* https://realm.io/docs/java/0.71.0/ 官方文档，内容齐全
 	* https://bng86.gitbooks.io/android-third-party-/content/realm.html 港台开发者出品，可以借鉴
 	
-* 其他：包含xUtils等重型框架使用的数据库ORM工具，后续进行介绍。
+* 其他：
+	* 包含xUtils等重型框架使用的数据库ORM工具，后续进行介绍。
+	* 数据库加密：SQL
 
 *总结*：强调性能的话，是哟个GreenDao或者Realm，如果对性能要求不高，优先使用OrmLite
 
@@ -112,6 +115,26 @@ android开发内容，分为下边5个方面，分别为：
 
 * https://segmentfault.com/q/1010000002408774 论坛讨论贴
 * https://bng86.gitbooks.io/android-third-party-/content/index.html 开发者的第三方库总结
+
+### Json解析
+
+* Gson：Google出品，使用性能稍差，但是差距并不大，库比较小，使用稳定。
+	* https://github.com/google/gson 官方文档
+	* http://www.importnew.com/14509.html 详细教程
+	* http://blog.sina.com.cn/s/blog_4e1e357d0101ednf.html 混淆问题解决
+	
+* fastJson：阿里巴巴出品，序列化（obj ->Json）性能强于Gson
+	* https://github.com/alibaba/fastjson 官方文档
+	* http://www.jianshu.com/p/a04c428963a2 简明教程
+	
+* Jackson：老牌的Json解析库，但是比较庞大，慎重使用
+
+*总结*：推荐使用Gson或者fastJson
+
+参考文档：
+* http://blog.csdn.net/vickyway/article/details/48157819 数据对比
+* http://www.jsonschema2pojo.org/ 在线解析Json到JavaBean 
+
 
 ### View的依赖注入
 
@@ -157,7 +180,7 @@ android开发内容，分为下边5个方面，分别为：
 	
 ### 权限请求以及处理（针对Android6.0以上机器适配）
 
-* FcPermission：https://github.com/lypeer/FcPermissions 应该是目前最好用的权限请求库了
+* FcPermission： https://github.com/lypeer/FcPermissions  应该是目前最好用的权限请求库了
 * Dexter：待探索
 * PermissionHelper：待探索
 
