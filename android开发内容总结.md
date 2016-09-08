@@ -89,7 +89,8 @@ android开发内容，分为下边5个方面，分别为：
 
 * OrmLite：基于注解和反射的的方式,导致ormlite性能有着一定的损失，但是文档较全面，社区活跃，有好的维护，使用简单，易上手。适合对性能要求不高的应用。
 	* http://ormlite.com/ 官方文档
-	* http://www.cnblogs.com/alexthecoder/p/4277758.html 使用教程一篇
+	* https://www.zybuluo.com/flyouting/note/6996 使用教程一篇
+	* https://github.com/j256/ormlite-android 针对Android平台，但是要结合ormlite-core
 
 * LitePal：没有使用过，可能比较陈旧
 	* http://blog.csdn.net/guolin_blog/article/details/38083103 郭霖的博客，整个系列讲数据库如何使用
@@ -107,7 +108,7 @@ android开发内容，分为下边5个方面，分别为：
 	
 * 其他：
 	* 包含xUtils等重型框架使用的数据库ORM工具，后续进行介绍。
-	* 数据库加密：SQL
+	* 数据库加密：SQLCipher框架，官方网站：https://www.zetetic.net/sqlcipher/sqlcipher-for-android/ ，使用社区版即可
 
 *总结*：强调性能的话，是哟个GreenDao或者Realm，如果对性能要求不高，优先使用OrmLite
 
@@ -142,7 +143,7 @@ android开发内容，分为下边5个方面，分别为：
 	* http://jakewharton.github.io/butterknife/ 官方文档
 	* http://www.jianshu.com/p/9ad21e548b69 使用教程，文章比较多，可以参考别的
 	
-* Dagger2：Dagger1的升级版本，更加快速，使用起来不如ButterKnife容易编写。
+* Dagger2：Dagger1的升级版本，更加快速，使用范围不限于View注入，更加强大，但是学习成本高。
 	* http://google.github.io/dagger/users-guide 官方文档
 	* http://gold.xitu.io/entry/578482316be3ff0042a9575b 掘金出品文章
 
@@ -177,6 +178,9 @@ android开发内容，分为下边5个方面，分别为：
 	* https://github.com/square/leakcanary 官方教程
 	* http://www.liaohuqiu.net/cn/posts/leak-canary/ 中文翻译
 	* https://segmentfault.com/a/1190000004925745 使用情况
+	* http://droidyue.com/blog/2016/03/28/android-leakcanary/index.html 使用详细教程
+	
+*注意*：6.0以上系统需要提前授权，授予读写内存卡的权限
 	
 ### 权限请求以及处理（针对Android6.0以上机器适配）
 
@@ -191,14 +195,13 @@ android开发内容，分为下边5个方面，分别为：
 
 ### 第三方服务引入
 
-* 即时通信：同推送
 * 短信平台：ShareSDK短信验证码（完全免费），云之讯，聚合数据
 * 支付：支付宝，微信，银联，京东
 * 地图：百度、高德、搜狗
-* 推送：小米、jpush（极光）、云巴、个推、腾讯信鸽、DDPush（开源实现，需要自己搭建服务端）
+* 推送/即时通信：小米、jpush（极光）、云巴、个推、腾讯信鸽、DDPush（开源实现，需要自己搭建服务端）
 * 统计：百度统计、友盟
 * 分享/第三方账号登陆：ShareSDK，友盟
-* 替代WebView的浏览技术： 腾讯X5浏览、mui浏览功能
+* 替代WebView的浏览技术： 腾讯X5浏览
 
 	
 ## 代码组织架构
