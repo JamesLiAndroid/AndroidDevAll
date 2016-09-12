@@ -246,6 +246,10 @@ android开发内容，分为下边5个方面，分别为：
 * AndFix： https://github.com/alibaba/AndFix
 * RocooFix：  https://github.com/dodola/RocooFix
 * Small： https://github.com/wequick/Small
+* delta：方案受到微信Tinker的启发，通过覆盖dex方式来达到热修复的目的。
+采用pre-odex，对app性能消耗降到最低，启动时间几乎无影响。
+
+项目地址：https://github.com/byteam/delta
 
 考虑线上项目存在bug不能及时解决的问题而提出，选择当前最合适的内容进行。
 
