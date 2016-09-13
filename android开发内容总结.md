@@ -21,6 +21,7 @@ android开发内容，分为下边5个方面，分别为：
 * View的依赖注入
 * 事件总线
 * 内存泄露监测
+* 数据缓存框架
 * 权限请求以及处理（针对Android6.0以上机器适配）
 * 大全套系列--重型框架，单独说明
 * 第三方服务
@@ -181,11 +182,21 @@ android开发内容，分为下边5个方面，分别为：
 	* http://droidyue.com/blog/2016/03/28/android-leakcanary/index.html 使用详细教程
 	
 *注意*：6.0以上系统需要提前授权，授予读写内存卡的权限
+
+### 数据缓存框架
+
+* ASimpleCache：轻量级数据缓存框架，可以缓存普通的字符串、JsonObject、JsonArray、Bitmap、Drawable、序列化的java对象，和 byte数据。
+	
+	* 参考官方文档  https://github.com/yangfuhai/ASimpleCache
 	
 ### 权限请求以及处理（针对Android6.0以上机器适配）
 
 * FcPermission： https://github.com/lypeer/FcPermissions  应该是目前最好用的权限请求库了
+
+* AndPermission： https://github.com/yanzhenjie/AndPermission  有部分注解的内容进行开发，相对简洁
+
 * Dexter：待探索
+
 * PermissionHelper：待探索
 
 ### 大全套框架
